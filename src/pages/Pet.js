@@ -10,12 +10,14 @@ class Pet extends Component {
     console.log(pet);
     return (
       <>
-        <div className={css.petPageMain}>
+        <div className={css.onePetWrap}>
           {/* <ReturnBtn /> */}
           <p className={css.namePet}>All about {pet.name}</p>
           <div className={css.cardPet}>
-            <img className={css.imagePet} src={pet.image} alt="pet" />
-            <div className={css.about}>
+            <div className={css.imagePetWrap}>
+              <img className={css.imagePet} src={pet.image} alt="pet" />
+            </div>
+            <div className={css.infoPetWrap}>
               <p className={css.aboutPet}>
                 Age: <span className={css.dataPet}>{pet.age}</span>
               </p>
