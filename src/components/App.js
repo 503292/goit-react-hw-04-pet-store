@@ -1,15 +1,29 @@
-import React from 'react';
-import PetsShop from './PetsShop/PetsShop';
-import { BrowserRouter as Router } from 'react-router-dom';
+import React, { Component } from 'react';
+import { Route, Switch } from 'react-router-dom';
+import Home from './pages/Home';
+import Pets from './pages/Pets';
+import About from './pages/About';
+import ErrorPage from './pages/ErrorPage';
+import Nav from './pages/Nav';
 import './App.module.css';
 
-const App = () => {
-  return (
-    <>
-      <Router>
-        <PetsShop />
-      </Router>
-    </>
-  );
-};
+class App extends Component {
+  state = {};
+  render() {
+    return (
+      <>
+        <Nav />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/about/:idPets" component={About} />
+          <Route path="/pets" component={Pets} />
+          <Route path="/about" component={About} />
+
+          <Route component={ErrorPage} />
+        </Switch>
+      </>
+    );
+  }
+}
+
 export default App;
