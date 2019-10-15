@@ -1,24 +1,5 @@
-/* Header */
-
-.header {
-  display: flex;
-  justify-content: left;
-  background-color: rgb(48, 44, 44);
-  list-style: none;
-  padding: 0;
-}
-.headerItem {
-  font-weight: 700;
-  padding: 20px;
-}
-.headerLink {
-  color: rgb(160, 98, 69);
-  text-decoration: none;
-  font-size: 28px;
-}
-
 /* Pets */
-.petsList {
+/* .petsList {
   list-style: none;
   display: grid;
   max-width: 1200px;
@@ -27,8 +8,8 @@
   margin-left: auto;
   margin-right: auto;
   padding: 0;
-}
-.petItem {
+} */
+/* .petItem {
   border: 2px solid rgb(77, 75, 78);
 }
 .linkCard {
@@ -51,4 +32,4 @@
   text-align: center;
 
   font-size: 28px;
-}
+} */
