@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(48, 44, 44);
+  list-style: none;
+  padding: 30px;
+  margin: 0;
+}
+.headerItem {
+  font-weight: 700;
+  padding: 20px;
+}
