@@ -10,17 +10,26 @@ const Nav = () => (
   <>
     <ul className={css.header}>
       <li className={css.headerItem}>
-        <NavLink to="/" exact activeStyle={ativeStyle}>
+        <NavLink
+          className={css.headerLink}
+          to="/"
+          exact
+          activeStyle={ativeStyle}
+        >
           Home
         </NavLink>
       </li>
       <li className={css.headerItem}>
-        <NavLink to="/pets" activeStyle={ativeStyle}>
+        <NavLink className={css.headerLink} to="/pets" activeStyle={ativeStyle}>
           Pets
         </NavLink>
       </li>
       <li className={css.headerItem}>
-        <NavLink to="/about" activeStyle={ativeStyle}>
+        <NavLink
+          className={css.headerLink}
+          to="/about"
+          activeStyle={ativeStyle}
+        >
           About
         </NavLink>
       </li>

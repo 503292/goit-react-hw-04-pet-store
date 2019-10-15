@@ -21,3 +21,11 @@ select {
   cursor: pointer;
   font-family: inherit;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  object-fit: cover;
+}

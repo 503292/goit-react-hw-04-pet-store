@@ -1,5 +1,5 @@
 import React from 'react';
 
-const Home = () => <>Hello in our pets shop</>;
+const Home = () => <h2>Welcome to Paws online store</h2>;
 
 export default Home;
