@@ -6,6 +6,7 @@ class PetsPage extends Component {
   state = {
     items: pets,
   };
+
   render() {
     const { items } = this.state;
     return (

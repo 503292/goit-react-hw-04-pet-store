@@ -1,21 +1,24 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import GoBackBtn from '../components/GoBackBtn/GoBackBtn';
 import pets from '../pets.json';
 import css from './Pages.module.css';
 
 class PetPage extends Component {
   state = {};
+
   findOnePet = () => {
-    return pets.find(pet => pet.id === this.props.match.params.idPets);
+    const { match } = this.props;
+    return pets.find(pet => pet.id === match.params.idPets);
   };
+
   handleGoback = () => {
     const { history, location } = this.props;
-
     if (location.state) {
       return history.push(location.state.from);
     }
 
-    history.push('/pets');
+    return history.push('/pets');
   };
 
   render() {
@@ -50,5 +53,21 @@ class PetPage extends Component {
     );
   }
 }
+
+PetPage.propTypes = {
+  history: PropTypes.shape({
+    push: PropTypes.func.isRequired,
+  }).isRequired,
+  location: PropTypes.shape({
+    state: PropTypes.shape({
+      from: PropTypes.PropTypes.shape().isRequired,
+    }),
+  }).isRequired,
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      idPets: PropTypes.string.isRequired,
+    }),
+  }).isRequired,
+};
 
 export default PetPage;
