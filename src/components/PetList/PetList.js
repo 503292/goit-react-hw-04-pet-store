@@ -23,7 +23,7 @@ const PetList = ({ items = [], match, location }) => (
 );
 
 PetList.propTypes = {
-  items: PropTypes.shape().isRequired,
+  items: PropTypes.arrayOf(PropTypes.shape()).isRequired,
   location: PropTypes.shape().isRequired,
   match: PropTypes.shape({
     path: PropTypes.string.isRequired,
