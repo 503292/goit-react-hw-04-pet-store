@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import pets from '../pets.json';
-import PetList from '../components/PetList';
+import PetList from '../components/PetList/PetList';
 
-class Pets extends Component {
+class PetsPage extends Component {
   state = {
     items: pets,
   };
   render() {
-    // console.log('state', this.state.items);
     const { items } = this.state;
     return (
       <>
@@ -18,4 +17,4 @@ class Pets extends Component {
   }
 }
 
-export default Pets;
+export default PetsPage;

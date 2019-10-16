@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import css from './App.module.css';
+import css from './Nav.module.css';
 
 const ativeStyle = {
   color: 'rgb(206, 145, 15)',

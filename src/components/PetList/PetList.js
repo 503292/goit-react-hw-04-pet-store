@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
-import css from './App.module.css';
+import css from './PetList.module.css';
 
 const PetList = ({ items = [], match, location }) => (
   <ul className={css.petsList}>

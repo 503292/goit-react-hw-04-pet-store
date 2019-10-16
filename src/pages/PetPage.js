@@ -1,17 +1,29 @@
 import React, { Component } from 'react';
+import GoBackBtn from '../components/GoBackBtn/GoBackBtn';
 import pets from '../pets.json';
 import css from './Pages.module.css';
 
-class Pet extends Component {
-  state = { onePet: [] };
+class PetPage extends Component {
+  state = {};
+  findOnePet = () => {
+    return pets.find(pet => pet.id === this.props.match.params.idPets);
+  };
+  handleGoback = () => {
+    const { history, location } = this.props;
+
+    if (location.state) {
+      return history.push(location.state.from);
+    }
+
+    history.push('/pets');
+  };
 
   render() {
-    const pet = pets.find(pet => pet.id === this.props.match.params.idPets);
-    console.log(pet);
+    const pet = this.findOnePet();
     return (
       <>
         <div className={css.onePetWrap}>
-          {/* <ReturnBtn /> */}
+          <GoBackBtn handleGoback={this.handleGoback} />
           <p className={css.namePet}>All about {pet.name}</p>
           <div className={css.cardPet}>
             <div className={css.imagePetWrap}>
@@ -39,4 +51,4 @@ class Pet extends Component {
   }
 }
 
-export default Pet;
+export default PetPage;
