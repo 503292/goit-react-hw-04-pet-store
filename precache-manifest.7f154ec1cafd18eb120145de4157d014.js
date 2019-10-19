@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6201b5a5ed738748e7fd7bfb9bdb828c",
+    "revision": "76663f25dfced0144786ec38a4657fb6",
     "url": "/goit-react-hw-04-pet-store/index.html"
   },
   {
