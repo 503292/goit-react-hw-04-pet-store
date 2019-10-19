@@ -1,4 +1,4 @@
-/* 0nePet */
+/* PetPage */
 .onePetWrap {
   width: 800px;
   margin: 0 auto;
@@ -22,4 +22,35 @@
 .dataPet {
 }
 .descriptionPet {
+}
+
+/* HomePage */
+.titleHome {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+/* AboutPage */
+.wrapAbout {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.titleAbout {
+  margin: 0;
+}
+.descriptionAbout {
+  margin: 0;
+  padding: 10px 0;
+}
+
+/* PetsPage */
+
+.titlePets {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-top: 20px;
 }
