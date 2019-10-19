@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import css from './GoBackBtn.module.css';
 
 const BackBtn = ({ handleGoback }) => (
-  <button type="button" onClick={handleGoback}>
+  <button className={css.backBtn} type="button" onClick={handleGoback}>
     Go back
   </button>
 );

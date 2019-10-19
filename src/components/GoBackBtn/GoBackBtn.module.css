@@ -1,0 +1,14 @@
+.backBtn {
+  padding: 10px 20px;
+  border: 2px solid rgb(48, 44, 44);
+  border-radius: 5px;
+  background-color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.backBtn:hover,
+.backBtn:focus {
+  /* background-color: rgb(221, 212, 208); */
+  color: rgb(206, 145, 15);
+}

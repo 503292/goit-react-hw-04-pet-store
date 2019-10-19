@@ -4,6 +4,7 @@
   margin: 0 auto;
 }
 .namePet {
+  font-weight: 700;
 }
 .cardPet {
   display: flex;
@@ -20,6 +21,7 @@
 .aboutPet {
 }
 .dataPet {
+  font-weight: 700;
 }
 .descriptionPet {
 }
