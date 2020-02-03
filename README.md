@@ -1,4 +1,4 @@
-https://503292.github.io/goit-react-hw-04-pet-store/#/ - link
+https://503292.github.io/react-pet-store/#/ - link
 
 This project was bootstrapped with
 [Create React App](https://github.com/facebook/create-react-app).
